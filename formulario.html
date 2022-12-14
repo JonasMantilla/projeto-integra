@@ -10,28 +10,74 @@
   <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/formulario.css">
     <title>Formulario</title>
 </head>
 <header>
-    <a href="Home.html"><img src="/img/Header.jpg" alt="logo site"></a>
-    <br>
-    <br>
-   <nav class="menu">
-
-    <p>Categorias</p>
-        <ul>
-         <li><a href="/saude.html">Saude</a></li>
-         <li><a href="/ufologia.html">Ufologia</a></li>
-         <li><a href="/tecnologia.html">Tecnologia</a></li>
-         <li><a href="/animais.html">Animais</a></li>
-         <li><a href="/esportes.html">Esportes</a></li>
-         <li><a href="/Home.html">Home</a></li>
-        </ul>
+  <nav>
+    <div class="menu-icon">
+       <span class="fas fa-bars"></span>
+    </div>
+    <div class="logo">
+       HYPECURIOSO
+    </div>
+    <div class="nav-items">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">UFOLOGIA</a></li>
+       <li><a href="#">ESPORTE</a></li>
+       <li><a href="#">TECNOLOGIA</a></li>
+       <li><a href="#">ALIMENTAÇAO</a></li>
+    </div>
+    <div class="search-icon">
+       <span class="fas fa-search"></span>
+    </div>
+    <div class="cancel-icon">
+       <span class="fas fa-times"></span>
+    </div>
+    <form action="#">
+       <input type="search" class="search-data" placeholder="Search" required>
+       <button type="submit" class="fas fa-search"></button>
+    </form>
+ </nav>
+ </div>
+ <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+ </script>
 </header>
-
-    <div class="direitos">
+<br>
+<div class="envie">
+  <h1>ENVIE SUA NOTICIA</h1>
+<img src="/img/Lo-fi concept.gif" alt="lofi">
+</div>
+<br>
+<div class="container"></div>
+    <div class="direito">
     <h1>Constituição da República Federativa do Brasil de 1988</h1>
- 
+  <br>
         <p> 5º Todos são iguais perante a lei, sem distinção de qualquer natureza, garantindo-se aos brasileiros e aos estrangeiros residentes no País a inviolabilidade do direito à vida, à liberdade, à igualdade, à segurança e à propriedade, nos termos seguintes:
         …
         X - são invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado o direito a indenização pelo dano material ou moral decorrente de sua violação;
@@ -58,39 +104,72 @@
     </div>
     <br>
     <br>
+      <fieldset>
        <div class="formulario1">
         <form action="">
-              <input type="checkbox" name="ciente">Eu estou ciente<br>
-              <p>Qual sua idade?</p>
-              <input type="radio" name="idade" value="+18">+18 <br>
-              <input type="radio" name="idade" value="-18">-18 <br>
-              <label for="nome">Seu Nome:</label>
-              <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
-              <label for="email">Seu E-Mail:</label>
-              <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
-              <label for="telefone">Seu Telefone:</label>
-              <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
-              <label for="mensagem">Sua Noticia</label>
-              <textarea name="noticia" id="noticia" placeholder="noticia*"required></textarea>
-            
-            <input type="file" name="arquivos">
-            <input type="submit" value="Enviar Noticia">
+          <legend><b>DADOS</b></legend>
+        <div class="inputbox">
+          <label for="nome">Nome Completo</label>
+          <input type="nome" name="nome" class="inputuser" required>
+        </div>
+        <div class="inputbox">
+          <label for="nome">Email</label>
+          <input type="email" name="email" class="inputuser" required>
+        </div>
+        <div class="inputbox">
+          <label for="nome">Telofone</label>
+          <input type="tel" name="nome" class="inputuser" required>
+        </div>
+        <div class="inputbox">
+          <label for="nome">Aceita os termos de serviço?</label>
+          <input type="checkbox" name="termo" class="inputuser" required>
+        </div>
+        <div class="inputbox">
+          <label for="nome">Envie a noticia em world ou bloco de notas</label>
+          <input type="file" name="noticia" class="inputuser" required>
+          <input type="submit" nome="enviar" class="inputuser">
+        </div>
           </form>
+        </fieldset>
        </div>
+      </div>
 </body>
 
 <br>
 <br>
 
   <footer>
-        <p>Siga nossas redes</p> 
-        <ul>
-         <li><a href="">Whatsapp</a></li>
-         <li><a href="">Facebook</a></li>
-         <li><a href="">Instagram</a></li>
-         <li><a href="">Youtube</a></li>
-        </ul>
-        <a href="/formulario.html"><img src="/img/Header.jpg" alt="logo site"></a>
-
+    <div class="wrapper">
+      <div class="button">
+         <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+         </div>
+         <span>Facebook</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+            <i class="fab fa-twitter"></i>
+         </div>
+         <span>Twitter</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+            <i class="fab fa-instagram"></i>
+         </div>
+         <span>Instagram</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+            <i class="fab fa-github"></i>
+         </div>
+         <span>Github</span>
+      </div>
+      <div class="button">
+         <div class="icon">
+            <i class="fab fa-youtube"></i>
+         </div>
+         <span>YouTube</span>
+      </div>
+   </div>
   </footer>
 </html>
