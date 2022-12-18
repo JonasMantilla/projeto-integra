@@ -1,0 +1,37 @@
+@font-face {
+    font-family: UnifrakturCook;
+    src: url(/fonts/UnifrakturCook-Bold.ttf);
+}
+
+@font-face {
+
+    font-family: ShadowsIntoLight;
+    src: url(/fonts/ShadowsIntoLight-Regular.ttf); ;
+}
+.logo{
+    font-family: UnifrakturCook;
+    font-size: 5rem;
+    color: var(--bs-red);
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+  }
+
+  a{
+    font-family: ShadowsIntoLight;
+  }
+
+  img{
+    border: solid 2px rgb(154, 154, 154);
+    border-radius: 20px;
+  }
+
+  p{
+   
+  }
+
+
+
