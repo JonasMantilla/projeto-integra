@@ -1,0 +1,160 @@
+@charset "UTF8";
+
+/*estilo do primeiro H1 */
+#titulo-topo{
+    color: white
+}
+#paragrafo-topo{
+    font-size: 18px;
+    text-align: left;
+}
+/*tamanho e compartamento do conteudo*/
+.row{
+display:flex; 
+width: 100%; 
+flex-wrap: wrap;
+
+}
+/*estilo do H1*/
+.title-notice{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+
+}
+/*estilo do paragrafo*/
+.paragrafo-notice{
+    color: black;
+    text-align: center;
+    text-align: justify;
+    padding: 1.5rem;
+    font-size: 18px;
+    color: black;
+}
+/*estilo da imagem do conteudo*/
+img{
+border-radius: 5px;
+max-width: 720px;
+width: 100%;
+
+}
+
+/****Estilo Button Flutante*****/
+
+.btn2{
+  position: fixed;
+  bottom:10px;
+  right:10px;
+}
+
+.btn2 button{
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #cb60b3;
+  border: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  font-size: 24px;
+  color: white;
+    
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.btn2 button:focus{
+  outline: none;
+}
+
+.btn2 button.main{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #ec6d64;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.btn2 button.main:before{
+  content: '⏚';
+}
+
+.btn2 ul{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding:0;
+  padding-right:5px;
+  margin:0;
+  list-style:none;
+  z-index:10;
+  
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+.btn2 ul li{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  margin-bottom: -10%;
+  opacity: 0;
+  
+  -webkit-transition: .3s ease-out;
+  -moz-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.btn2 ul li label{
+  margin-right:10px;
+  white-space: nowrap;
+  display: block;
+  margin-top: 10px;
+  padding: 5px 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  border-radius:3px;
+  height: 28px;
+  font-size: 16px;
+  pointer-events: none;
+  opacity:0;
+  
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  transition: .2s ease-out;
+}
+
+/*muda a cor do button ao clicar com MOUSE*/
+
+.btn2 button.main:active,
+.btn2 button.main:focus{
+  outline: none;
+  background-color: #7716ff;
+  box-shadow: 0 3px 8px rgba(0,0,0,.5);
+ }
+ 
+.btn2 button.main:active:before,
+.btn2 button.main:focus:before{
+  content: '↑';
+}
+
+.btn2 button.main:active + ul,
+.btn2 button.main:focus + ul{
+  bottom: 70px;
+}
+
+.btn2 button.main:active + ul li,
+.btn2 button.main:focus + ul li{
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+.btn2 button.main:active + ul li:hover label,
+.btn2 button.main:focus + ul li:hover label{
+  opacity: 1;
+}
+/****Final do estilo Button Flutante*****/
