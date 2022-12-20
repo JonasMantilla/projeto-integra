@@ -1,0 +1,67 @@
+@font-face {
+    font-family: UnifrakturCook;
+    src: url(/projeto-integra-design/fonts/UnifrakturCook-Bold.ttf);
+}
+
+@font-face {
+
+    font-family: ShadowsIntoLight;
+    src: url(/projeto-integra-design/fonts/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+
+  font-family: PTSerif-Regular;
+  src: url(/projeto-integra-design/fonts/PTSerif-Regular.ttf);
+}
+
+@font-face {
+
+  font-family: PTSerif-BoldItalic;
+  src: url(/projeto-integra-design/fonts/PTSerif-BoldItalic.ttf);
+}
+
+
+body{
+
+}
+.logo{
+    font-family: UnifrakturCook;
+    font-size: 5rem;
+    color: var(--bs-red);
+    text-shadow: #000 2px 3px 2px;
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+  }
+
+  a{
+    font-family: ShadowsIntoLight;
+    text-shadow: var(--bs-red);
+  }
+
+h1{
+  font-family: PTSerif-BoldItalic;
+}
+  p{ font-family: PTSerif-Regular;
+    text-decoration: underline;
+  }
+
+nav{
+  border-radius: 20px;
+}
+
+.row{
+  display:flex; 
+  width: 100%; 
+  flex-wrap: wrap;
+  
+}
+  img{
+  border-radius: 5px;
+  max-width: 720px;
+  width: 100%;
+  
+  }
