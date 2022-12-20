@@ -16,26 +16,30 @@ flex-wrap: wrap;
 
 }
 /*estilo do H1*/
-.title-notice{
+.titulo1{
     color: black;
     text-align: center;
     font-size: 30px;
+    border: none;
+    padding-bottom: 5px; 
+   
 
 }
 /*estilo do paragrafo*/
 .paragrafo-notice{
-    color: black;
     text-align: center;
-    text-align: justify;
     padding: 1.5rem;
-    font-size: 18px;
+    font-size: 19px;
     color: black;
 }
+
+
 /*estilo da imagem do conteudo*/
 img{
 border-radius: 5px;
 max-width: 1024px;
 width: 100%;
+margin-top: 5px;
 
 }
 
