@@ -107,7 +107,7 @@ img:hover  {
 
 p {
 		margin: 2em;
-        font-family:Unbounded-Variablefont;;
+        font-family:Unbounded-Variablefont;
 	}
 
 
@@ -136,9 +136,6 @@ h4{
 
 
 
-footer{
-    background-color: rgb(255, 255, 255);
-}
 
 
 /* logo hype */
@@ -333,7 +330,9 @@ footer{
 
 /* footer */
 
-
+footer{
+    background-color: rgb(255, 255, 255);
+}
 
 p.copyright {
     color: rgb(0, 0, 0);
@@ -435,3 +434,143 @@ p.copyright {
     background: #DE463B;
   }
 
+
+  @media  (max-width: 1200px) {
+    html { 
+        font-size: 90%;
+    }
+    a{
+            font-size: 90%; 
+    }
+    img {
+        width: 90%;
+        height:90%;
+        }
+        .conteudo{
+            width: 90%;
+            height:90%;
+        }
+        .noticia1{
+            width: 90%;
+            height:90%;
+    
+        }
+    .mini{
+            padding: 40px;
+            width: 120px;
+            margin: 8px;
+     }
+    .noticia-container{
+        width: 90%;
+        height:90%;
+    }
+    .mini-img{
+        width: 90%;
+        height:90%;
+    }
+  }
+
+  @media  (max-width: 992px) {
+    html { 
+        font-size: 70%;
+    }
+    a{
+        font-size: 70%; 
+}
+    img {
+        width: 80%;
+        height:80%;
+        }
+        .conteudo{
+            width: 70%;
+            height:70%;
+        }
+        .noticia1{
+            width: 70%;
+            height:70%;
+    
+        }
+     .mini{
+            padding: 30px;
+            width: 100px;
+            margin: 6px;
+     }
+        .noticia-container{
+            width: 80%;
+            height:80%;
+        }
+        .mini-img{
+            width: 80%;
+            height:80%;
+        }
+  }
+  @media  (max-width: 778px) {
+    html { 
+        font-size: 50%;
+    }
+    a{
+        font-size: 60%; 
+}
+    img {
+        width: 60%;
+        height:60%;
+        }
+        .conteudo{
+            width: 60%;
+            height:60%;
+        }
+        .noticia1{
+            width: 60%;
+            height:60%;
+    
+        }
+        .mini{
+            padding: 25px;
+            width: 90px;
+            margin: 5px;
+     }
+        .noticia-container{
+            width: 60%;
+            height:60%;
+        }
+        .mini-img{
+            display: none;
+        }
+  }
+  @media  (max-width: 471px) {
+    html { 
+        font-size: 30%;
+    }
+    a{
+        font-size: 30%; 
+}
+    img {
+        width: 40%;
+        height:40%;
+        }
+    .conteudo{
+        width: 40%;
+        height:40%;
+    }
+    .noticia1{
+        width: 40%;
+        height:40%;
+
+    }
+        .mini{
+            padding: 20px;
+            width: 70px;
+            margin: 3px;
+     }
+        .noticia-container{
+            width: 40%;
+            height:40%;
+        }
+        .mini-img{
+            display: none;
+        }
+        .wrapper{
+           display: none;
+        }
+  }
+  
