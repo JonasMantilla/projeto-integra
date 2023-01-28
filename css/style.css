@@ -287,6 +287,28 @@ h4{
     margin-bottom: 10px;
 }
 
+/* relogio */
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, alpha);
+
+}
+
+.relogio div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f4f4f4;
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+
 
 
 
