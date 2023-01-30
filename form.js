@@ -15,12 +15,12 @@ form.addEventListener("submit", (e)=>{
  
 //---------- FUNÇÕES GERAIS -------------- //
 function togglePopup(input, label) {
-  // Mostrar popup de campo obrigatório
+
   input.addEventListener("focus", () => {
     label.classList.add("required-popup");
   });
 
-  // Ocultar popup de campo obrigatório
+ 
   input.addEventListener("blur", () => {
     label.classList.remove("required-popup");
   });
