@@ -1,7 +1,9 @@
 textarea{
     font-family: sans-serif;
     font-size: 1em;
+
 }
+
 
 .grupo:before, .grupo:after {
     content: " ";
@@ -14,17 +16,22 @@ textarea{
 
 .campo {
     margin-bottom: 1em;
+  
 }
 
 .campo label {
     margin-bottom: 0.2em;
     color: #666;
     display: block;
+    
 }
 
 fieldset.grupo .campo {
     float:  left;
     margin-right: 1em;
+    padding: 20px;  
+    margin: auto;
+
 }
 
 .campo input[type="text"],
@@ -43,12 +50,43 @@ fieldset.grupo .campo {
     padding-right: 1em;
 }
 
-.campo input:focus, .campo select:focus, .campo textarea:focus {
-    background: rgb(0, 215, 136) ;
-}
-
-.campo label.checkbox {
+label.checkbox {
     color: #000;
     display: inline-block;
     margin-right: 1em;
+    margin-top:30px;
 }
+.helper-text{
+    font-size: .2em;
+    color: red;
+}
+
+/*---------Estilos [INPUTS]/[POPUP]-------*/
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }

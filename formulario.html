@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/formulario.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script src="form.js" defer></script>
     <title>envio de noticias</title>
 </head>
 <body>
@@ -53,18 +55,25 @@
                 X - são invioláveis a intimidade, a vida privada, a honra e a imagem das pessoas, assegurado o direito a indenização pelo dano material ou moral decorrente de sua violação;</p>
 
                 <form action="#" method="post">
+                  
                     <fieldset class="grupo">
                         <div class="campo">
-                            <label for="nome">Nome: </label>
-                            <input type="text" name="nome" id="nome" required>
+                            <label for="username">Nome: </label>
+                            <input type="text" name="nome" id="username" required>
+                            <p id="username-helper" class="helper-text"></p>
                         </div>
                         <div class="campo">
-                            <label for="snome">url: </label>
-                            <input type="text" name="url" id="url" required>
+                            <label for="url">url: </label>
+                            <input type="url" name="url" id="url" required>
+                            <p id="url-helper" class="helper-text"></p>
                         </div>
                         <label class="checkbox">
-                            <input type="radio" name="idade" value="+18" required> 18+
+                           <label for="idade-maior">Maior de idade </label>
+                           <input type="radio" name="idade" id="idade-maior" value="maior">
+                           <label for="idade-menor">Menor de idade </label>
+                           <input type="radio" name="idade" id="idade-menor" value="menor">
                         <button type="submit" class="button">Enviar</button>
+                        
                      </fieldset>
                 </form>
         </div>
