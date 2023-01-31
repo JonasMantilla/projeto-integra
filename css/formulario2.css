@@ -107,6 +107,6 @@ div.campo > input{
 div.campo > input:hover{
     transition-delay: 1s;
     background-color:var(--cor-form);
-    color: #fff;
+    color: #000;
 
 }
