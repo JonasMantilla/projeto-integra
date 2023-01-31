@@ -75,7 +75,7 @@ urlInput.addEventListener("keyup", ()=>{
         if(validarUrl(urlInput.value)!==true){
      
        estilizarInputIncorreto(urlInput, urlHelper);
-       urlHelper.textContent = "Ex: https://minhanoticia*";
+       urlHelper.textContent = "Ex: https://minhanoticia.com";
   } else {
         urlHelper.textContent = ''
     estilizarInputCorreto(urlInput, urlHelper);
@@ -93,7 +93,7 @@ urlInput.addEventListener("keyup", ()=>{
        
       if(validarUser(usernameInput.value)!==true){
       
-        usernameHelper.textContent = "Usuario precisa ter 3 ou mais caracteres";
+        usernameHelper.textContent = "nome precisa ter 3 ou mais caracteres";
         estilizarInputIncorreto(usernameInput, usernameHelper)
       } else {
         usernameHelper.textContent = ''
