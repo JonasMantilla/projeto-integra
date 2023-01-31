@@ -46,8 +46,7 @@ email.addEventListener("keyup", ()=>{
 
 password.addEventListener("keyup", ()=>{
     if(validarSenha(password.value)!==true){
-        textPassword.textContent = "Sua senha precisa ter no minimo 8 caracteres" + "\n" + 
-        "conter uma letra maiúscula, um símbolo e um número.*"
+        textPassword.textContent = "Sua senha precisa ter no minimo 8 caracteres,ex: Teste@123.*"
     }else{
         textPassword.textContent = ''
     }

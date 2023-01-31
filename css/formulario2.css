@@ -21,13 +21,6 @@ h2{
 }
 /**INPUTS*/
 
-#text-lost-password{
-    text-align: right;
-    font-size: .9em;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    color: rgba(49, 49, 49, 0.712);
-}
 #form > button[type=submit]{
     width: 100%;
     height: 40px;
@@ -64,19 +57,19 @@ h2{
 #textFormEmail{
     color: rgba(49, 49, 49, 0.295);
     margin-bottom: 10px;
-    font-size: .8em;
+    font-size: .7em;
 
 }
 #textFormSenha{
     color: rgba(49, 49, 49, 0.295);
     margin-bottom: 10px;
-    font-size: .8em;
+    font-size: .7em;
     
 }
 #textForm{
     color: rgba(49, 49, 49, 0.295);;
     margin-top: 10px;
-    font-size: .8em;
+    font-size: .7em;
     text-align: center;
 } 
 
