@@ -24,7 +24,6 @@
     font-size: 1em;
 }
 
-
 body{
     background-image: url('https://www.ead.iapajus.com.br/metronic/assets/media/logos/background.jpg');
     background-repeat: no-repeat;
@@ -56,7 +55,7 @@ h2{
     margin-bottom: 40px;
     font-size: 1em;
     text-align: center;
-    color:rgb(3, 187, 119)
+    color:rgb(3, 187, 119);
     
 }
 /**INPUTS*/
