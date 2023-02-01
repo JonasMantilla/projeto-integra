@@ -23,7 +23,10 @@
     color:#fff;
     font-size: 1em;
 }
-
+#p1{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
 body{
     background-image: url('https://www.ead.iapajus.com.br/metronic/assets/media/logos/background.jpg');
@@ -37,7 +40,7 @@ body{
 section{
     margin: auto;
     width: 420px;
-    height: 380px;
+    height: 320px;
     border-radius: 5px;
     border: 2px solid rgb(0, 215, 136);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
@@ -53,7 +56,7 @@ section{
 h2{
     font-family: Unbounded-Variablefont;
     margin-top: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     font-size: 1em;
     text-align: center;
     color:rgb(3, 187, 119)
@@ -62,23 +65,27 @@ h2{
 /**INPUTS*/
 
 #form > button[type=submit]{
-    width: 100%;
+    width: 20%;
     height: 40px;
     margin-top: 40px;
-    color: rgba(49, 49, 49, 0.712);
+    margin-left: 7em;
+    color: #fff;
     font-weight: bold;
     border: 1px solid rgb(0, 215, 136);
     border-radius: 5px;
+    background-color:rgb(0, 215, 136); ;
+    
     
 }
 #form > button[type=reset]{
-    width: 100%;
+    width: 30%;
     height: 40px;
-    margin-top: 5px;
+    margin-top: 40px;
     border: 2px solid rgba(255, 255, 255, 0.493);
     color: rgba(49, 49, 49, 0.712);
     font-weight: bold;
     border-radius: 5px;
+  
     
     
 }
@@ -86,7 +93,7 @@ h2{
     cursor: pointer;
     color: #fff;
 
-    background-color:rgb(0, 215, 136);
+    background-color:rgba(44, 240, 168, 0.178);
    
 }
 #form > button[type="reset"]:hover{
@@ -100,17 +107,9 @@ h2{
 /* ---------- Estilos dinâmicos ---------- */
 #textFormEmail{
     color: rgb(0, 215, 136);
-    margin-bottom: 10px;
     font-size: .7em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-}
-#textFormSenha{
-    color: rgb(0, 215, 136);
-    margin-bottom: 10px;
-    font-size: .7em;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
 #textForm{
     color: rgb(0, 215, 136);
