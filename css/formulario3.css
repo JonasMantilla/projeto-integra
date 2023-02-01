@@ -148,3 +148,67 @@ div.campo > input:hover{
    
 
 }
+
+
+/**media query**/
+
+  @media (max-width: 992px) {
+    html{
+        font-size: 90%;
+    }
+    
+  }
+  @media  (max-width: 778px) {
+    html { 
+        font-size: 90%;
+    }
+    a{
+        font-size: 60%; 
+}
+    img {
+        width: 60%;
+        height:60%;
+        }
+       
+        section{
+            width: 50%;
+            height:50%;
+         
+        }
+        #form{
+            width: 89%;
+            height:60%;
+            padding: 15px;
+        }
+     
+        #form > button[type="submit"]{
+            height: 30px;
+            margin-left: 50px;
+        }
+        
+        #form > button[type="reset"]{
+            height: 30px;
+           
+        }
+        div.campo > input{
+  
+        width: 168px;
+        height: 40px;
+      
+        
+  }
+}
+@media (min-width: 560px) and (max-width:780px){
+    html{
+        font-size: 90%;
+    }
+    #form > button[type="submit"]{
+        height: 40px;
+        margin-left: 80px;
+    }
+    
+    #form > button[type="reset"]{
+        height: 40px;
+       
+    }
+  }
