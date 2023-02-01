@@ -23,6 +23,7 @@ form.addEventListener("submit", (e)=>{
 
 /****FUNÇÕES***/
 
+
 function validarEmail(email){
     let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/; 
     return emailPattern.test(email)
