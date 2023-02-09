@@ -35,18 +35,6 @@ body{
     font-size: 2.5em;
 }
 
- /* ver mais */
-#mais1{
-    display: none;
-}
-#mais2{
-    display: none;
-}
-#mais3{
-    display: none;
-}
-
-
 /*links pequenos embaixo do header*/
 
 .mini-link{
@@ -366,6 +354,7 @@ h5{
 
 
 
+
 /* footer */
 
 footer{
@@ -612,3 +601,44 @@ p.copyright {
         }
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+  #mais01{
+    display: none;
+}
+#mais02{
+    display: none;
+}
+#mais03{
+    display: none;
+}
+
+#mais04{
+    display: none;
+}
+
+#mais05{
+    display: none;
+}
+#mais06{
+    display: none;
+}
+#mais07{
+    display: none;
+}
+#mais08{
+    display: none;
+}
+#mais09{
+    display: none;
+}

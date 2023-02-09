@@ -22,9 +22,9 @@ const relogio = setInterval(function time() {
 
 
 function vermais(n){
-  let pontos=document.getElementById("pontos"+n);
-  let maisTexto=document.getElementById("mais"+n);
-  let btnVermais=document.getElementById("btnVerMais"+n);
+  let pontos=document.getElementById("pontos"+0+n);
+  let maisTexto=document.getElementById("mais"+0+n);
+  let btnVermais=document.getElementById("btnVerMais"+0+n);
 
   if(pontos.style.display === "none"){
     pontos.style.display="inline";
@@ -35,5 +35,11 @@ function vermais(n){
     maisTexto.style.display="inline";
     btnVermais.innerHTML="Ver menos";
   }
-}
+};
 
+var contador = document.querySelector('.badge');
+
+document.querySelector('button').addEventListener('click', function(){
+  var numero = parseInt(contador.textContent) + 1;
+  contador.textContent = numero;
+});
