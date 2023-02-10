@@ -17,6 +17,9 @@
 *{
     outline: 0;
 }
+.sp{
+    background-color: transparent;
+}
 
 #link, a{
     font-family: UnifrakturCook-bold;
@@ -156,16 +159,14 @@ div.campo > input:hover{
 
 @media (max-width: 992px) {
     html{
-        font-size: 90%;
+        font-size: 70%;
     }
 }
   @media  (max-width: 778px) {
     html { 
-        font-size: 90%;
+        font-size: 50%;
     }
-    a{
-        font-size: 60%; 
-}
+
     img {
         width: 60%;
         height:60%;
@@ -191,4 +192,8 @@ div.campo > input:hover{
         }
       
   }
-  
+  @media (max-width:471px){
+    html{
+        font-size: 30%;
+    }
+  }

@@ -17,7 +17,9 @@
 *{
     outline: 0;
 }
-
+.sp{
+    background-color:transparent;
+}
 #link, a{
     font-family: UnifrakturCook-bold;
     color:#fff;
@@ -152,15 +154,21 @@ div.campo > input:hover{
 
 /**media query**/
 
-  @media (max-width: 992px) {
+ @media (max-width: 1200px){
     html{
         font-size: 90%;
+    }
+ }
+
+  @media (max-width: 992px) {
+    html{
+        font-size: 70%;
     }
     
   }
   @media  (max-width: 778px) {
     html { 
-        font-size: 90%;
+        font-size: 50%;
     }
     a{
         font-size: 60%; 
@@ -198,9 +206,9 @@ div.campo > input:hover{
         
   }
 }
-@media (min-width: 560px) and (max-width:780px){
+@media(max-width:778px){
     html{
-        font-size: 90%;
+        font-size: 50%;
     }
     #form > button[type="submit"]{
         height: 40px;
@@ -212,3 +220,8 @@ div.campo > input:hover{
        
     }
   }
+@media(max-width:471){
+    html{
+        font-size: 30%;
+    }
+}
