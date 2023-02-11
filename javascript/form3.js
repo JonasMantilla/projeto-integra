@@ -29,3 +29,11 @@ email.addEventListener("keyup", ()=>{
         textEmail.textContent = ''
     }
 })
+
+function clickBtnResponsivo(){
+    if(responsivobtn.style.display == 'block'){
+      responsivobtn.style.display = 'none'
+    }else{
+      responsivobtn.style.display = 'block'
+    }
+  }

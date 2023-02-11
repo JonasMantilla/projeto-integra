@@ -42,8 +42,8 @@ body{
 
 section{
     margin: auto;
-    width: 420px;
-    height: 320px;
+    width: 500px;
+    height: 350px;
     border-radius: 5px;
     border: 2px solid rgb(0, 215, 136);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
@@ -54,7 +54,10 @@ section{
 }
 
 #form{
-    padding: 20px;
+   width: 94%;
+   height: 91%;
+   padding: 15px;
+   
 }
 h2{
     font-family: Unbounded-Variablefont;
@@ -66,12 +69,15 @@ h2{
     
 }
 /**INPUTS*/
+#btn-rodape-form{
+    display: flex;
+    justify-content: right;
+}
 
-#form > button[type=submit]{
+#btn-rodape-form > button[type=submit]{
     width: 20%;
     height: 40px;
     margin-top: 40px;
-    margin-left: 7em;
     color: #fff;
     font-weight: bold;
     border: 1px solid rgb(0, 215, 136);
@@ -80,26 +86,27 @@ h2{
     
     
 }
-#form > button[type=reset]{
-    width: 30%;
+#btn-rodape-form > button[type=reset]{
+    width: 20%;
     height: 40px;
     margin-top: 40px;
     border: 2px solid rgba(255, 255, 255, 0.493);
-    color: rgba(49, 49, 49, 0.712);
+    color: #fff;
+    background-color: transparent;
     font-weight: bold;
     border-radius: 5px;
   
     
     
 }
-#form > button[type="submit"]:hover{
+#btn-rodape-form  > button[type="submit"]:hover{
     cursor: pointer;
     color: #fff;
 
     background-color:rgba(44, 240, 168, 0.178);
    
 }
-#form > button[type="reset"]:hover{
+#btn-rodape-form  > button[type="reset"]:hover{
     cursor: pointer;
     background-color: rgb(0, 215, 136);
 
@@ -155,13 +162,13 @@ div.campo > input:hover{
 
 .btn-responsivo2{ 
     position:fixed;
-    bottom:10px;
-    right: 10px;
+    bottom:20px;
+    right: 30px;
   
     }
     span#botao-menu{
       font-size: 55px;
-      color: blueviolet;
+      color: rgb(0, 215, 136);
       cursor: pointer;
       display: block;
       
@@ -172,12 +179,14 @@ div.campo > input:hover{
     }
     button{
       outline: none;
-      background-color:violet;
+      background-color:#223A59;
       width: 40px;
       height: 40px;
       border-radius: 50%;
       border: none;
       margin:5px;
+
+      color: #fff;
      
     }
     button:hover{
@@ -194,70 +203,109 @@ div.campo > input:hover{
     html{
         font-size: 90%;
     }
+    section{
+        width: 600px;
+        height: 300px;
+    }
+    #form{
+        width: 95%;
+        height:90%;
+        padding: 15px;
+    }
  }
 
   @media (max-width: 992px) {
     html{
         font-size: 70%;
     }
-    
+    section{
+        width: 60%;
+        height: 60%;
+    }
+    #form{
+        width: 95%;
+        height:60%;
+        padding: 15px;
+    }
   }
   @media  (max-width: 778px) {
     html { 
-        font-size: 50%;
+        font-size: 70%;
     }
-    a{
-        font-size: 60%; 
-}
+
+    section{
+        width: 50%;
+        height: 50%;
+    }
+
     img {
         width: 60%;
         height:60%;
         }
        
-        section{
-            width: 50%;
-            height:50%;
-         
-        }
+    
         #form{
             width: 89%;
             height:60%;
             padding: 15px;
         }
-     
-        #form > button[type="submit"]{
+      #btn-rodape-form{
+        display:flex;
+        flex-wrap: wrap;
+                
+      }
+        #btn-rodape-form > button[type="submit"]{
             height: 30px;
-            margin-left: 50px;
+            width: 100%;
+          
         }
         
-        #form > button[type="reset"]{
+        #btn-rodape-form> button[type="reset"]{
             height: 30px;
+            width: 100%;
+            margin-top: 10px;
            
         }
         div.campo > input{
   
-        width: 168px;
-        height: 40px;
-      
-        
+        width: 158px;
+        height: 40px;        
   }
+
+  
 }
-@media(max-width:778px){
-    html{
-        font-size: 50%;
-    }
-    #form > button[type="submit"]{
-        height: 40px;
-        margin-left: 80px;
-    }
-    
-    #form > button[type="reset"]{
-        height: 40px;
-       
-    }
-  }
-@media(max-width:471){
+
+@media(max-width:471px){
     html{
         font-size: 30%;
     }
+    section{
+        width: 50%;
+        height: 30%;
+    }
+     
+    #form{
+        width: 86%;
+       
+    }
+    .btn-responsivo2{
+        position:fixed;
+        bottom:200px;
+        right: 10px;
+    }
+    div.campo > input{
+        width:calc(60.5%);
+       transform: translateY(-10px);
+    }
+    #btn-rodape-form > button[type="submit"]{
+        height: 30px;
+        width: 40%;
+        margin-left: 50px;
+    }
+    
+    #btn-rodape-form > button[type="reset"]{
+        display: none;
+       
+    }
 }
+

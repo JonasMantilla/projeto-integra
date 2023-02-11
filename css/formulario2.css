@@ -71,6 +71,8 @@ h2{
     font-weight: bold;
     border: 1px solid rgb(0, 215, 136);
     border-radius: 5px;
+
+    background-color: rgb(0, 215, 136);
     
 }
 #form > button[type=reset]{
@@ -78,7 +80,8 @@ h2{
     height: 40px;
     margin-top: 5px;
     border: 2px solid rgba(255, 255, 255, 0.493);
-    color: rgba(49, 49, 49, 0.712);
+    color:rgba(49, 49, 49, 0.712);
+    background-color: transparent;
     font-weight: bold;
     border-radius: 5px;
     
@@ -88,7 +91,7 @@ h2{
     cursor: pointer;
     color: #fff;
 
-    background-color:rgb(0, 215, 136);
+    background-color:transparent;
    
 }
 #form > button[type="reset"]:hover{
@@ -139,9 +142,10 @@ div.campo > span{
 div.campo > input{
     font-size: .8em;
     width:calc(85.5%);
-    transform: translateY(-8px);
+    transform: translateY(-10px);
     border: none;
     padding-left: 5px;
+    background-color: transparent;
 
 }
 div.campo > input:hover{
@@ -155,13 +159,13 @@ div.campo > input:hover{
 
 .btn-responsivo2{ 
     position:fixed;
-    bottom:10px;
-    right: 10px;
+    bottom:20px;
+    right: 30px;
   
     }
     span#botao-menu{
       font-size: 55px;
-      color: blueviolet;
+      color: rgb(0, 215, 136);
       cursor: pointer;
       display: block;
       
@@ -172,7 +176,7 @@ div.campo > input:hover{
     }
     button{
       outline: none;
-      background-color:violet;
+      background-color:#223A59;;
       width: 40px;
       height: 40px;
       border-radius: 50%;
@@ -201,7 +205,7 @@ div.campo > input:hover{
 }
   @media  (max-width: 778px) {
     html { 
-        font-size: 50%;
+        font-size: 70%;
     }
 
     img {
@@ -223,14 +227,19 @@ div.campo > input:hover{
      
         div.campo > input{
   
-        width: 168px;
+        width: 158px;
         height: 40px;
       
         }
       
   }
+
   @media (max-width:471px){
     html{
         font-size: 30%;
+    }
+    div.campo > input{
+        width:calc(60.5%);
+       transform: translateY(-10px);
     }
   }
