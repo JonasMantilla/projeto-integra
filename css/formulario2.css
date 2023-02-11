@@ -151,6 +151,43 @@ div.campo > input:hover{
 
 }
 
+/*********estilização do botao lateral************/
+
+.btn-responsivo2{ 
+    position:fixed;
+    bottom:10px;
+    right: 10px;
+  
+    }
+    span#botao-menu{
+      font-size: 55px;
+      color: blueviolet;
+      cursor: pointer;
+      display: block;
+      
+    }
+    ul{
+      list-style: none;
+  
+    }
+    button{
+      outline: none;
+      background-color:violet;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      margin:5px;
+     
+    }
+    button:hover{
+      cursor: pointer;
+      transition-duration: 100ms;
+      width: 45px;
+      height: 45px;
+
+    }
+
 @media  (max-width: 1200px) {
     html { 
         font-size: 90%;
