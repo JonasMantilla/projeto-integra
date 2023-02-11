@@ -140,7 +140,6 @@ div.campo > span{
 
 }
 div.campo > input{
-    font-size: .8em;
     width:calc(85.5%);
     transform: translateY(-10px);
     border: none;

@@ -117,7 +117,7 @@ h2{
 /* ---------- Estilos dinâmicos ---------- */
 #textFormEmail{
     color: rgb(0, 215, 136);
-    font-size: .7em;
+    font-size: .8em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -136,19 +136,19 @@ div.campo{
     height: 39px;
     border: 1px solid rgba(49, 49, 49, 0.295);
     background-color: #fff;
+   
 } 
 
 div.campo > span{
     color:rgb(0, 215, 136);
-    padding: 7px;
+    padding: 6px;
 
 }
 div.campo > input{
-    font-size: .8em;
     width:calc(85.5%);
     transform: translateY(-8px);
     border: none;
-    padding-left: 5px;
+    padding: 8px;
 
 }
 div.campo > input:hover{
@@ -202,6 +202,7 @@ div.campo > input:hover{
  @media (max-width: 1200px){
     html{
         font-size: 90%;
+
     }
     section{
         width: 600px;
@@ -211,6 +212,9 @@ div.campo > input:hover{
         width: 95%;
         height:90%;
         padding: 15px;
+    }
+    div.campo > input{
+        padding: 11px;
     }
  }
 
@@ -267,9 +271,9 @@ div.campo > input:hover{
            
         }
         div.campo > input{
-  
-        width: 158px;
-        height: 40px;        
+            padding: 10px;
+            width: 70%;
+               
   }
 
   
