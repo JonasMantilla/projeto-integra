@@ -466,9 +466,7 @@ p.copyright {
     html { 
         font-size: 90%;
     }
-    a{
-            font-size: 90%; 
-    }
+   
     img {
         width: 90%;
         height:90%;
@@ -501,9 +499,7 @@ p.copyright {
     html { 
         font-size: 70%;
     }
-    a{
-        font-size: 70%; 
-}
+
     img {
         width: 80%;
         height:80%;
@@ -535,9 +531,7 @@ p.copyright {
     html { 
         font-size: 50%;
     }
-    a{
-        font-size: 60%; 
-}
+
     img {
         width: 60%;
         height:60%;
@@ -568,9 +562,7 @@ p.copyright {
     html { 
         font-size: 30%;
     }
-    a{
-        font-size: 30%; 
-}
+    
     img {
         width: 40%;
         height:40%;
@@ -612,6 +604,9 @@ p.copyright {
 
 
 
+  #mais00{
+    display: none;
+}
 
   #mais01{
     display: none;

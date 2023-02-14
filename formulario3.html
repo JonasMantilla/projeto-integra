@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='pt-br'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,7 +30,7 @@
   
             
                         <h2>Esqueceu a senha ?</h2>
-                            <p id="p1">Insira seu email e nos te enviaremos um link
+                            <p >Insira seu email e nos te enviaremos um link
                                 para você criar uma nova senha.
                             </p>
                        
@@ -43,8 +43,10 @@
                     
                             
                         
-                                <button type="submit">Enviar</button>
-                                <button type="reset">Cancelar</button>
+                                <div id="btn-rodape-form">
+                                  <button type="submit">Enviar</button>
+                                  <button type="reset">Cancelar</button>
+                                </div>
                             
                             <p id="textForm"></p>
                           
@@ -59,5 +61,59 @@
        
     </main>
      
+    <!----------INICIO DO MENU RESPONSIVO LATERAL-->
+ <div class="btn-responsivo2">
+ 
+    <ul>
+   
+      <div id="responsivobtn">
+        <li>
+          <label for="opcao1" ></label>
+          <a href="1index.HTML" target="_blank">
+            <button id="opcao1">
+              <span class="material-icons">
+                home
+                </span>
+            </button>
+          </a>
+        </li>
+        <li>
+          <label for="opcao1" ></label>
+          <a href="3esportes.html">
+              <button id="opcao2">
+                <span class="material-icons">
+                  pedal_bike
+                  </span>
+              
+              </button>
+          </a>
+        </li>
+        <li>
+          <label for="opcao1" ></label>
+          <a href="2tecnologia.html">
+              <button id="opcao3">
+                <span class="material-icons">
+                  lan
+                  </span>
+              </button>
+          </a>
+        </li>
+        <li>
+          <label for="opcao4" ></label>
+          <a href="4ufologia.html">
+              <button id="opcao4">
+                <span class="material-icons">
+                  album
+                  </span>
+              
+              </button>
+          </a>
+        </li>
+      </div>
+      <span id="botao-menu" class="material-icons" onclick="clickBtnResponsivo()">swap_vertical_circle</span>
+
+    </div>
+
+    <!----------FIM DO MENU RESPONSIVO LATERAL-->
 </body>
 </html>

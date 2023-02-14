@@ -17,13 +17,15 @@
 *{
     outline: 0;
 }
-
+.sp{
+    background-color:transparent;
+}
 #link, a{
     font-family: UnifrakturCook-bold;
     color:#fff;
     font-size: 1em;
 }
-#p1{
+p{
     color: #fff;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -40,8 +42,8 @@ body{
 
 section{
     margin: auto;
-    width: 420px;
-    height: 320px;
+    width: 500px;
+    height: 350px;
     border-radius: 5px;
     border: 2px solid rgb(0, 215, 136);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.247);
@@ -52,7 +54,10 @@ section{
 }
 
 #form{
-    padding: 20px;
+   width: 94%;
+   height: 91%;
+   padding: 15px;
+   
 }
 h2{
     font-family: Unbounded-Variablefont;
@@ -64,12 +69,15 @@ h2{
     
 }
 /**INPUTS*/
+#btn-rodape-form{
+    display: flex;
+    justify-content: right;
+}
 
-#form > button[type=submit]{
+#btn-rodape-form > button[type=submit]{
     width: 20%;
     height: 40px;
     margin-top: 40px;
-    margin-left: 7em;
     color: #fff;
     font-weight: bold;
     border: 1px solid rgb(0, 215, 136);
@@ -78,26 +86,27 @@ h2{
     
     
 }
-#form > button[type=reset]{
-    width: 30%;
+#btn-rodape-form > button[type=reset]{
+    width: 20%;
     height: 40px;
     margin-top: 40px;
     border: 2px solid rgba(255, 255, 255, 0.493);
-    color: rgba(49, 49, 49, 0.712);
+    color: #fff;
+    background-color: transparent;
     font-weight: bold;
     border-radius: 5px;
   
     
     
 }
-#form > button[type="submit"]:hover{
+#btn-rodape-form  > button[type="submit"]:hover{
     cursor: pointer;
     color: #fff;
 
     background-color:rgba(44, 240, 168, 0.178);
    
 }
-#form > button[type="reset"]:hover{
+#btn-rodape-form  > button[type="reset"]:hover{
     cursor: pointer;
     background-color: rgb(0, 215, 136);
 
@@ -108,7 +117,7 @@ h2{
 /* ---------- Estilos dinâmicos ---------- */
 #textFormEmail{
     color: rgb(0, 215, 136);
-    font-size: .7em;
+    font-size: .8em;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
@@ -127,19 +136,20 @@ div.campo{
     height: 39px;
     border: 1px solid rgba(49, 49, 49, 0.295);
     background-color: #fff;
+   
 } 
 
 div.campo > span{
     color:rgb(0, 215, 136);
-    padding: 7px;
+    padding: 6px;
 
 }
 div.campo > input{
-    font-size: .8em;
     width:calc(85.5%);
     transform: translateY(-8px);
     border: none;
-    padding-left: 5px;
+    padding: 8px;
+    background-color: transparent;
 
 }
 div.campo > input:hover{
@@ -149,66 +159,159 @@ div.campo > input:hover{
 
 }
 
+/*********estilização do botao lateral***********/
+
+.btn-responsivo2{ 
+    position:fixed;
+    bottom:20px;
+    right: 30px;
+  
+    }
+    span#botao-menu{
+      font-size: 55px;
+      color: rgb(0, 215, 136);
+      cursor: pointer;
+      display: block;
+      
+    }
+    ul{
+      list-style: none;
+  
+    }
+    button{
+      outline: none;
+      background-color:#223A59;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: none;
+      margin:5px;
+
+      color: #fff;
+     
+    }
+    button:hover{
+      cursor: pointer;
+      transition-duration: 100ms;
+      width: 45px;
+      height: 45px;
+
+    }
 
 /**media query**/
 
-  @media (max-width: 992px) {
+ @media (max-width: 1200px){
     html{
         font-size: 90%;
+
+    }
+    section{
+        width: 600px;
+        height: 300px;
+    }
+    #form{
+        width: 95%;
+        height:90%;
+        padding: 15px;
+    }
+    div.campo > input{
+        padding: 11px;
+    }
+ }
+
+  @media (max-width: 992px) {
+    html{
+        font-size: 70%;
+    }
+    section{
+        width: 60%;
+        height: 60%;
+    }
+    #form{
+        width: 95%;
+        height:60%;
+        padding: 15px;
     }
     
   }
   @media  (max-width: 778px) {
     html { 
-        font-size: 90%;
+        font-size: 70%;
     }
-    a{
-        font-size: 60%; 
-}
+
+    section{
+        width: 50%;
+        height: 50%;
+    }
+
     img {
         width: 60%;
         height:60%;
         }
        
-        section{
-            width: 50%;
-            height:50%;
-         
-        }
+    
         #form{
             width: 89%;
             height:60%;
             padding: 15px;
         }
-     
-        #form > button[type="submit"]{
+      #btn-rodape-form{
+        display:flex;
+        flex-wrap: wrap;
+                
+      }
+        #btn-rodape-form > button[type="submit"]{
             height: 30px;
-            margin-left: 50px;
+            width: 100%;
+          
         }
         
-        #form > button[type="reset"]{
+        #btn-rodape-form> button[type="reset"]{
             height: 30px;
+            width: 100%;
+            margin-top: 10px;
            
         }
         div.campo > input{
-  
-        width: 168px;
-        height: 40px;
-      
-        
+            padding: 10px;
+            width: 70%;
+               
   }
+
+  
 }
-@media (min-width: 560px) and (max-width:780px){
+
+@media(max-width:471px){
     html{
-        font-size: 90%;
+        font-size: 30%;
     }
-    #form > button[type="submit"]{
-        height: 40px;
-        margin-left: 80px;
+    section{
+        width: 50%;
+        height: 30%;
     }
-    
-    #form > button[type="reset"]{
-        height: 40px;
+     
+    #form{
+        width: 86%;
        
     }
-  }
+    .btn-responsivo2{
+        position:fixed;
+        bottom:200px;
+        right: 10px;
+    }
+    div.campo > input{
+        width:calc(60.5%);
+       transform: translateY(-10px);
+    }
+    #btn-rodape-form > button[type="submit"]{
+        height: 30px;
+        width: 40%;
+        margin-left: 50px;
+    }
+    
+    #btn-rodape-form > button[type="reset"]{
+        display: none;
+       
+    }
+}
+

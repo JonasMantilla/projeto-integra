@@ -24,6 +24,15 @@ form.addEventListener("submit", (e)=>{
 /****FUNÇÕES***/
 
 
+function clickBotaoResponsivo(){
+    if(responsivo9.style.display == 'block'){
+      responsivo9.style.display = 'none'
+    }else{
+      responsivo9.style.display = 'block'
+    }
+  }
+
+
 function validarEmail(email){
     let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/; 
     return emailPattern.test(email)
